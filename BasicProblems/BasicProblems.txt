@@ -1,0 +1,179 @@
+[ashesh@MISTRI BasicProblems] $ swipl factorial.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- factorial(4,Y).
+Y = 24.
+
+?- factorial(5,Y).
+Y = 120.
+
+?- factorial(10,Y).
+Y = 3628800.
+
+?- factorial(1,Y).
+Y = 1.
+
+?- factorial(0,Y).
+Y = 1 
+
+
+[ashesh@MISTRI BasicProblems] $ swipl fibonacci.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- fibonacci(N,Value).
+N = Value, Value = 0.
+
+?- fibonacci(0,Value).
+Value = 0.
+
+?- fibonacci(1,Value).
+Value = 1.
+
+?- fibonacci(2,Value).
+Value = 1.
+
+?- fibonacci(3,Value).
+Value = 2.
+
+?- fibonacci(4,Value).
+Value = 3.
+
+?- fibonacci(5,Value).
+Value = 5.
+
+?- fibonacci(6,Value).
+Value = 8.
+
+?- fibonacci(7,Value).
+Value = 13.
+
+?- fibonacci(8,Value).
+Value = 21.
+
+?- fibonacci(9,Value).
+Value = 34.
+
+
+[ashesh@MISTRI BasicProblems] $ swipl gcd.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- gcd(20,10,D).
+D = 10.
+
+?- gcd(8,12,D).
+D = 4.
+
+?- gcd(12,8,D).
+D = 4.
+
+?- gcd(54,24,D).
+D = 6.
+
+
+[ashesh@MISTRI BasicProblems] $ swipl hanoi.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- move(3,left,right,center). 
+[move,a,disk,from,the,left,pole,to,right,pole]
+[move,a,disk,from,the,left,pole,to,center,pole]
+[move,a,disk,from,the,right,pole,to,center,pole]
+[move,a,disk,from,the,left,pole,to,right,pole]
+[move,a,disk,from,the,center,pole,to,left,pole]
+[move,a,disk,from,the,center,pole,to,right,pole]
+[move,a,disk,from,the,left,pole,to,right,pole]
+true.
+
+?- move(2,left,right,center).
+[move,a,disk,from,the,left,pole,to,center,pole]
+[move,a,disk,from,the,left,pole,to,right,pole]
+[move,a,disk,from,the,center,pole,to,right,pole]
+true.
+
+?- move(1,left,right,center).
+[move,a,disk,from,the,left,pole,to,right,pole]
+true.
+
+?- move(1,center,left,right).
+[move,a,disk,from,the,center,pole,to,left,pole]
+true.
+
+
+[ashesh@MISTRI BasicProblems] $ swipl lcm.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- lcm(3,4,LCM).
+LCM = 12.
+
+?- lcm(4,6,LCM).
+LCM = 12.
+
+?- lcm(21,6,LCM).
+LCM = 42.
+
+
+[ashesh@MISTRI BasicProblems] $ swipl prime.pl 
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- isprime(2).
+true.
+
+?- isprime(15).
+false.
+
+?- isprime(3).
+true.
+
+?- isprime(4).
+false.
+
+?- isprime(5).
+true.
+
+?- isprime(6).
+false.
+
+?- isprime(7).
+true.
+
+?- isprime(8).
+false.
+
+?- isprime(9).
+false.
+
