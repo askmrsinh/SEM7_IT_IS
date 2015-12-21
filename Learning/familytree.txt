@@ -1,0 +1,51 @@
+[ashesh@MISTRI familytree] $ swipl familytree.pl
+% familytree.pl compiled 0.00 sec, 22 clauses
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.6)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- parent(susan, mary).
+true.
+
+?- parent(ray, peter).
+false.
+
+?- yeye(X, susan).
+false.
+
+?- mama(amy, X).
+X = peter .
+
+?- mama(amy, X).
+X = peter ;
+X = mary.
+
+?- gunggung(X, Y).
+X = jack,
+Y = peter ;
+X = jack,
+Y = mary ;
+false.
+
+?- grandparent(X, Y).
+X = jack,
+Y = peter ;
+X = jack,
+Y = mary ;
+X = david,
+Y = peter ;
+X = david,
+Y = mary ;
+X = karen,
+Y = peter ;
+X = karen,
+Y = mary ;
+X = amy,
+Y = peter ;
+X = amy,
+Y = mary ;
+false.
