@@ -1,0 +1,72 @@
+[ashesh@MISTRI 05] $ python ttt.py 
+[None, None, None]
+[None, None, None]
+[None, None, None]
+
+Next Move: 1
+
+['X', None, None]
+[None, None, None]
+[None, None, None]
+move: 2 causes: X-win
+move: 3 causes: X-win
+move: 4 causes: X-win
+move: 5 causes: Draw
+move: 6 causes: X-win
+move: 7 causes: X-win
+move: 8 causes: X-win
+move: 9 causes: X-win
+
+['X', None, None]
+[None, 'O', None]
+[None, None, None]
+
+Next Move: 7
+
+['X', None, None]
+[None, 'O', None]
+['X', None, None]
+move: 2 causes: X-win
+move: 3 causes: X-win
+move: 4 causes: Draw
+move: 6 causes: X-win
+move: 8 causes: X-win
+move: 9 causes: X-win
+
+['X', None, None]
+['O', 'O', None]
+['X', None, None]
+
+Next Move: 6
+
+['X', None, None]
+['O', 'O', 'X']
+['X', None, None]
+move: 2 causes: Draw
+move: 3 causes: Draw
+move: 8 causes: Draw
+move: 9 causes: Draw
+
+['X', None, None]
+['O', 'O', 'X']
+['X', 'O', None]
+
+Next Move: 2
+
+['X', 'X', None]
+['O', 'O', 'X']
+['X', 'O', None]
+move: 3 causes: Draw
+move: 9 causes: X-win
+
+['X', 'X', 'O']
+['O', 'O', 'X']
+['X', 'O', None]
+
+Next Move: 9
+
+['X', 'X', 'O']
+['O', 'O', 'X']
+['X', 'O', 'X']
+winner is None
+
