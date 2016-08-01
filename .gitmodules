@@ -1,3 +1,6 @@
 [submodule "Planning"]
 	path = Planning
 	url = https://github.com/tansey/strips
+[submodule "ExpertSystem"]
+	path = ExpertSystem
+	url = https://github.com/linkyndy/expert-systems
