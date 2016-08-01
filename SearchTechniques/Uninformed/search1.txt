@@ -1,0 +1,25 @@
+[ashesh@MISTRI Uninformed] $ swipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.6)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [search1].
+% search1 compiled 0.00 sec, 25 clauses
+true.
+
+?- [graph].
+% graph compiled 0.00 sec, 11 clauses
+true.
+
+?- depth_first([[1]],9,P,N).
+P = [9, 8, 4, 2, 1],
+N = 4 .
+
+?- breadth_first([[1]],9,P,N).
+P = [9, 7, 3, 1],
+N = 9 .
+
